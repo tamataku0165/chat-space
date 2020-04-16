@@ -33,6 +33,8 @@ Things you may want to cover:
 
 ### Association
 
+- belongs_to :groups
+- belongs_to :messages
 
 ## messagesテーブル
 
@@ -45,6 +47,8 @@ Things you may want to cover:
 
 ### Association
 
+- belongs_to :groups
+- belongs_to :users
 
 ## groupテーブル
 
@@ -55,7 +59,8 @@ Things you may want to cover:
 
 ### Association
 
-
+- belongs_to :messages
+- belongs_to :users
 
 ## users_groupsテーブル
 
@@ -65,3 +70,6 @@ Things you may want to cover:
 |group_id|integer|
 
 ### Association
+
+- belongs_to :group
+- belongs_to :user
