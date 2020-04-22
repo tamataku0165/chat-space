@@ -1,0 +1,33 @@
+.main-chat
+  .main-header
+    .left-box
+      .left-box__group-name
+        test
+      .left-box__menber
+        menber :
+        .left-box__menber__name
+          tama
+    = link_to "#", class: "edit__link" do
+      Edit
+  .messages
+    .message
+      .message-box__user-name
+        tama
+        .message-box__date-time
+          2020/4/21(Tus)18:55:38
+      .message-box__user-message
+        ファイト！
+      .message-box__user-name
+        kinta
+        .message-box__date-time
+          2020/4/21(Tus)19:23:13
+      .message-box__user-message
+        サンキュー！
+  .form
+    .form__input-box
+      type a message
+      %label{class: "form-image"}
+        %i.fa.fa-image
+        %input{type: "file", class: "form-file"}
+    = link_to "#", class: "form__submit-btn" do
+      Send
