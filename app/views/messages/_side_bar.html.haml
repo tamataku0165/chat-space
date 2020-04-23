@@ -2,14 +2,14 @@
   .side-header
     .side-header__box
       .side-header__box__user-name
-        tama
+        = current_user.name
       .side-header__box__menu
         .side-header__box__menu__new-group
           = link_to "#", class: "side-header__box__menu__new-group" do
             %i.far.fa-edit
         .side-header__box__menu__edit-user
-          = link_to "#", class: "side-header__box__menu__edit-user" do
-            %i.fas.fa-cog
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
   .groups
     = link_to "#", class: "groups__dtn" do
       .group
